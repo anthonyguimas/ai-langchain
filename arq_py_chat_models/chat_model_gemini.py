@@ -32,7 +32,7 @@ model_hydrogen = ChatGoogleGenerativeAI(
 )
 
 model = model_lite.with_fallbacks([model_flash, model_hydrogen])
-
+ 
 print("Enviando pergunta para o Gemini...")
 
 for tentativa in range(1, 4):
